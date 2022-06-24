@@ -23,26 +23,16 @@ const images = [
   },
 ];
 
-// Якби ви моглиб в двух словах пояснити як мені в кожен лі
-// запізнути картинку. У мене виходіть в 1 лі всі картинки
-// Не розумію як мені зробити так як сказано в завданні але не через
-// метод insertAdjacentHTML
-// ДЯКУЮ
+// const galleryEl = document.querySelector('.gallery');
+// const makeImageEl = option => {
+//   const liEl = document.createElement('li');
+//   liEl.classList.add('task_3');
+//   const imageEl = document.createElement('img');
+//   imageEl.src = option.url;
+//   imageEl.alt = option.alt;
+//   liEl.append(imageEl);
+//   return liEl;
+// };
 
-//
-const galleryEl = document.querySelector('.gallery');
-const liEl = document.createElement('li');
-const allImgEl = images.map(image => {
-  return image;
-});
-console.log(allImgEl);
-const element = liEl.forEach(
-  (allImgEl = option => {
-    const imageEl = document.createElement('img');
-    imageEl.src = option.url;
-    imageEl.alt = option.alt;
-    return imageEl;
-  })
-);
-// liEl.append(...element);
-galleryEl.append(element);
+// const elements = images.map(makeImageEl);
+// galleryEl.append(...elements);
