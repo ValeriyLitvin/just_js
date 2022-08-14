@@ -1,22 +1,31 @@
-// Напиши скрипт, який:
+const descriptionEl = document.querySelectorAll('.item');
+console.log(`Number of categories: ${descriptionEl.length}`);
 
-// Порахує і виведе в консоль кількість категорій в ul#categories,
-//     тобто елементів li.item.
-// Для кожного элемента li.item у спику ul#categories,
-//     знайде і виведе в консоль текст заголовку елемента(тегу < h2 >)
-//      і кількість елементів в категорії(усіх < li >, вкладених в нього).
-// В результаті, в консолі будуть виведені наступні повідомлення.
+descriptionEl.forEach(element => {
+  console.log(`Category: ${element.firstElementChild.textContent}`);
+  console.log(`Elements: ${element.lastElementChild.children.length}`);
+});
+/*
 
-// Number of categories: 3
+Напиши скрипт, який:
 
-// Category: Animals
-// Elements: 4
+1.Порахує і виведе в консоль кількість категорій в ul#categories, 
+тобто елементів li.item.
 
-// Category: Products
-// Elements: 3
+2.Для кожного элемента li.item у спику ul#categories, 
+знайде і виведе в консоль текст заголовку елемента (тегу <h2>) 
+і кількість елементів в категорії (усіх <li>, вкладених в нього).
+В результаті, в консолі будуть виведені наступні повідомлення.
 
-// Category: Technologies
-// Elements: 5
+Number of categories: 3
 
-const allLiCategory = document.querySelectorAll('.item');
-console.log(`Number of categories: ${allLiCategory.length}`);
+Category: Animals
+Elements: 4
+
+Category: Products
+Elements: 3
+
+Category: Technologies
+Elements: 5
+
+*/
