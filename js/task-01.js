@@ -1,6 +1,5 @@
 const descriptionEl = document.querySelectorAll('.item');
 console.log(`Number of categories: ${descriptionEl.length}`);
-
 descriptionEl.forEach(element => {
   console.log(`Category: ${element.firstElementChild.textContent}`);
   console.log(`Elements: ${element.lastElementChild.children.length}`);
