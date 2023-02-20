@@ -1,9 +1,19 @@
-const descriptionEl = document.querySelectorAll('.item');
-console.log(`Number of categories: ${descriptionEl.length}`);
-descriptionEl.forEach(element => {
-  console.log(`Category: ${element.firstElementChild.textContent}`);
-  console.log(`Elements: ${element.lastElementChild.children.length}`);
-});
+let numbers = [3, 1, 6];
+
+function addGrade(numbers, grade) {
+  numbers.push(grade);
+  return numbers;
+}
+
+console.log(addGrade(numbers, 10));
+//
+
+// const descriptionEl = document.querySelectorAll('.item');
+// console.log(`Number of categories: ${descriptionEl.length}`);
+// descriptionEl.forEach(element => {
+//   console.log(`Category: ${element.firstElementChild.textContent}`);
+//   console.log(`Elements: ${element.lastElementChild.children.length}`);
+// });
 /*
 
 Напиши скрипт, який:
