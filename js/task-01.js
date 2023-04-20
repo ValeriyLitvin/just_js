@@ -1,11 +1,6 @@
-let numbers = [3, 1, 6];
+let sum;
+console.log(sum !== NaN);
 
-function addGrade(numbers, grade) {
-  numbers.push(grade);
-  return numbers;
-}
-
-console.log(addGrade(numbers, 10));
 //
 
 // const descriptionEl = document.querySelectorAll('.item');
