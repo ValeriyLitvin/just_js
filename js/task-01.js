@@ -1,6 +1,3 @@
-let sum;
-console.log(sum !== NaN);
-
 //
 
 // const descriptionEl = document.querySelectorAll('.item');
