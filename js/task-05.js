@@ -12,10 +12,31 @@
 // console.log(input);
 // console.log(span);
 
-// /*
+/*
 
-// Напиши скрипт, який під час набору тексту в інпуті input#name-input (подія input),
-// підставляє його поточне значення в span#name-output. Якщо інпут порожній,
-// у спані повинен відображатися рядок "Anonymous".
+Напиши скрипт, який під час набору тексту в інпуті 
+input#name - input(подія input),
+підставляє його поточне значення в span#name-output. 
+Якщо інпут порожній,
+у спані повинен відображатися рядок "Anonymous".
 
-// */
+
+
+
+*/
+
+const accessInput = document.querySelector('#name-input');
+
+const accessH1 = document.querySelector('#name-output');
+
+const userName = () => {
+  if (accessInput.textContent === '') {
+    return (accessH1.textContent = 'Anonymous');
+  } else {
+    return (accessH1.textContent = accessInput.textContent);
+  }
+};
+userName();
+
+console.log(accessInput);
+console.log(accessH1);

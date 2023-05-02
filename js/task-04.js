@@ -1,25 +1,10 @@
-// const decBtn = document.querySelector('button[data-action="decrement"]');
-// const incBtn = document.querySelector('button[data-action="increment"]');
-// const valueText = document.querySelector('#value');
-// let value = 0;
+const btnDecrement = document.querySelector('button[data-action="decrement"]');
+const btnIncrement = document.querySelector('button[data-action="increment"]');
+const counterValue = document.querySelector('#value');
 
-// decBtn.addEventListener('click', decrementBtn);
-// incBtn.addEventListener('click', incrementBtn);
-// function decrementBtn() {
-//   value -= 1;
-//   valueText.textContent = value;
-// }
-// function incrementBtn() {
-//   value += 1;
-//   valueText.textContent = value;
-// }
-
-// /*
-
-// Створи змінну counterValue,
-// в якій буде зберігатися поточне значення лічильника та ініціалізуй її значенням 0.
-
-// Додай слухачів кліків до кнопок, всередині яких збільшуй або зменшуй значення лічильника.
-// Оновлюй інтерфейс новим значенням змінної counterValue.
-
-// */
+btnDecrement.addEventListener('click', () => {
+  return (counterValue.textContent = Number(counterValue.textContent) - 1);
+});
+btnIncrement.addEventListener('click', () => {
+  return (counterValue.textContent = Number(counterValue.textContent) + 1);
+});
